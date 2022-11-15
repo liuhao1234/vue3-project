@@ -1,6 +1,6 @@
-# vue301
+# vue3
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Vite. (vue3 + pinia + vue-router)
 
 ## Recommended IDE Setup
 
