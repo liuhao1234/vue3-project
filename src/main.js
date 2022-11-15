@@ -6,6 +6,8 @@ import ElementPlus from 'element-plus'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import App from './App.vue'
 
+// 环境变量配置
+console.log("***** env *****",import.meta.env)
 // 引入全局样式
 import 'element-plus/dist/index.css'
 import '@/assets/main.css'
