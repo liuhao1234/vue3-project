@@ -15,14 +15,14 @@ import { computed } from 'vue'
 export default {
   name:"Login",
   setup(){
-    const router = useRouter()
+    // const router = useRouter()
     const globalStore = useGlobalState()
     const { increment } = globalStore
     function handleIncrement(){
       increment()
-      router.push({
-        name:"home"
-      })
+      // router.push({
+      //   name:"home"
+      // })
     }
     return {
       count:computed(()=>globalStore.count),

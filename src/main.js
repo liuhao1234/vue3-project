@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import piniaPluginPersist from 'pinia-plugin-persist'
 import router from '@/router'
 import ElementPlus from 'element-plus'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
@@ -11,6 +12,7 @@ import '@/assets/main.css'
 
 // 创建相关实例
 const pinia = createPinia()
+pinia.use(piniaPluginPersist)
 const app = createApp(App)
 
 // 注入相关实例

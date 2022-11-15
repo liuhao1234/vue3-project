@@ -13,5 +13,11 @@ const useStore = defineStore('global', {
       this.count++
     }
   },
+  persist: {
+    enabled: true,
+    strategies: [{
+      storage: localStorage
+    }]
+  }
 })
 export default useStore
