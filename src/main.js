@@ -8,6 +8,7 @@ import App from './App.vue'
 
 // 环境变量配置
 console.log("***** env *****",import.meta.env)
+
 // 引入全局样式
 import 'element-plus/dist/index.css'
 import '@/assets/main.css'
@@ -16,6 +17,12 @@ import '@/assets/main.css'
 const pinia = createPinia()
 pinia.use(piniaPluginPersist)
 const app = createApp(App)
+
+// 应用级配置
+app.config.errorHandler = (err) => {
+  /* 处理错误 */
+  console.log(err)
+}
 
 // 注入相关实例
 app.use(pinia)
